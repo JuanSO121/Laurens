@@ -5,6 +5,8 @@ import { Hero } from './components/Hero';
 import { CategorySection } from './components/CategorySection';
 import { products } from './data/products';
 import { ProductDetails } from './components/ProductDetails';
+import { CatalogPage } from './components/CatalogPage';
+import { HandbagCatalogPage } from './components/HandbagCatalogPage'; // Importa el nuevo componente
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <Routes>
+          {/* Página principal */}
           <Route
             path="/"
             element={
@@ -32,8 +35,14 @@ function App() {
               </>
             }
           />
+          {/* Página de detalles del producto */}
           <Route path="/product/:id" element={<ProductDetails products={products} />} />
+          {/* Página de catálogo de perfumes */}
+          <Route path="/catalog/perfume" element={<CatalogPage />} />
+          {/* Página de catálogo de bolsos */}
+          <Route path="/catalog/handbag" element={<HandbagCatalogPage />} />
         </Routes>
+        {/* Footer */}
         <footer className="bg-purple-900 text-white py-8 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-lg font-serif">Perfumería Lauren's</p>

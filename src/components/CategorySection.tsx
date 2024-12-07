@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import { Product, ProductType } from '../types/product';
 import { ProductCard } from './ProductCard';
@@ -18,13 +19,13 @@ export function CategorySection({ title, products, type }: CategorySectionProps)
     <section className="mb-16">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-serif font-bold text-gray-900">{title}</h2>
-        <a
-          href={`/catalog/${type}`}
+        <Link
+          to={`/catalog/${type}`}
           className="flex items-center text-purple-600 hover:text-purple-800 transition-colors"
         >
           Ver más
           <ChevronRight className="h-5 w-5 ml-1" />
-        </a>
+        </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProducts.map((product) => (
