@@ -5,7 +5,7 @@ export function openWhatsApp(product: Product): void {
   const { name, brand, volume, gender } = product;
 
   const message = encodeURIComponent(
-    `Hola! Me gustaría saber el precio de: ${name}, ${brand}, ${volume || ''}, ${gender || ''}.`
+    `Hola! Me gustaría saber el precio de: ${name} ${brand} ${volume || ''} ${gender || ''}`
   );
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;

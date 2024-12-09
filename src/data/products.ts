@@ -422,31 +422,5 @@ export const products: Product[] = [
   },
 
   // Handbags
-  {
-    id: "50",
-    name: "Elegance Tote",
-    brand: "Lauren's Accessories",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    description: "Spacious leather tote bag perfect for everyday use.",
-    category: "women",
-    type: "handbag"
-  },
-  {
-    id: "51",
-    name: "Classic Shoulder Bag",
-    brand: "Lauren's Accessories",
-    image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80",
-    description: "Timeless shoulder bag with gold hardware details.",
-    category: "women",
-    type: "handbag"
-  },
-  {
-    id: "52",
-    name: "Mini Crossbody",
-    brand: "Lauren's Collection",
-    image: "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&w=800&q=80",
-    description: "Compact crossbody bag for essential items.",
-    category: "unisex",
-    type: "handbag"
-  }
+
 ];
