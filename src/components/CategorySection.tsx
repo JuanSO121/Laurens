@@ -11,17 +11,15 @@ interface CategorySectionProps {
 }
 
 export function CategorySection({ title, products, type }: CategorySectionProps) {
-  const filteredProducts = products
-    .filter(product => product.type === type)
-    .slice(0, 3);
+  const filteredProducts = products.filter((product) => product.type === type).slice(0, 3);
 
   return (
     <section className="mb-16">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-serif font-bold text-gray-900">{title}</h2>
+        <h2 className="text-3xl font-serif font-bold text-purple-800">{title}</h2>
         <Link
           to={`/catalog/${type}`}
-          className="flex items-center text-purple-600 hover:text-purple-800 transition-colors"
+          className="flex items-center text-pink-500 hover:text-pink-700 transition-colors font-medium"
         >
           Ver más
           <ChevronRight className="h-5 w-5 ml-1" />

@@ -8,7 +8,7 @@ interface PerfumeDetailsProps {
 
 export function PerfumeDetails({ perfume }: PerfumeDetailsProps) {
   const handleWhatsAppClick = () => {
-    openWhatsApp(perfume.name);
+    openWhatsApp(perfume);
   };
 
   return (

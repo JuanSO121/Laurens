@@ -17,7 +17,7 @@ export function ProductDetails({ products }: { products: Product[] }) {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+            className="w-full max-w-md h-[400px] object-cover rounded-lg shadow-lg"
           />
         </div>
         <div className="space-y-6">
